@@ -2,7 +2,7 @@ FROM node:4.8-alpine
 
 EXPOSE 3000
 
-RUN mkdir -p /usr/src/app
+RUN mkdir -p /usr/src/app  && mkdir -p /usr/src/app/docs/content
 WORKDIR /usr/src/app
 COPY . /usr/src/app
 VOLUME ["/usr/src/app/docs/content"]  
